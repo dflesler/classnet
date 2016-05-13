@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /*.html$
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$
+
+Disallow: /*?*
+
+Disallow: /images/
+
+Sitemap: http://www.e-classnet.com/sitemap.xml
