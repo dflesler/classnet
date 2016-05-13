@@ -1,25 +1,28 @@
-<form action="." method="POST" id="contact">
+<form method="POST" action="http://e-s.herokuapp.com/form?redir=/gracias/" id="contact">
+	<img src="http://e-s.herokuapp.com/ping" width="1" height="1" />
+	<input type="hidden" name="to" value="contacto@e-classnet.com">
+	<input type="hidden" name="token" value="eyJpc3MiOiJFYWFTIiwic3ViIjoiY29udGFjdG9AZS1jbGFzc25ldC5jb20ifQ.-YAkyUlcUPa4j7dqkZ284TDwTpguQN6KoMQ2Z_lcikw">
 	<fieldset>
 		<ol>
 			<li>
 				<label for="name">Nombre y apellido<span>*</span></label>
-				<input type="text" name="data[name]" id="name" />
+				<input type="text" name="name" id="name" required="required" />
 			</li>
 			<li>
 				<label for="email">Email<span>*</span></label>
-				<input type="text" name="data[email]" id="email" />
+				<input type="email" name="email" id="email" required="required" />
 			</li>
 			<li>
 				<label for="company">Empresa</label>
-				<input type="text" name="data[company]" id="company" />
+				<input type="text" name="company" id="company" />
 			</li>
 			<li>
 				<label for="specialty">Especialidad</label>
-				<input type="text" name="data[specialty]" id="specialty" />
+				<input type="text" name="specialty" id="specialty" />
 			</li>
 			<li>
 				<label for="country">País</label>
-				<select id="country" name="data[country]">
+				<select id="country" name="country">
 					<option value="" selected="selected">Otro</option>
 					<option>Argentina</option>
 					<option>Bolivia</option>
@@ -34,7 +37,7 @@
 			</li>
 			<li id="provinceItem">
 				<label for="province">Provincia</label>
-				<select id="province" name="data[province]">
+				<select id="province" name="province">
 					<option value="" selected="selected">Elija una provincia</option>
 					<option>Buenos Aires</option>
 					<option>Catamarca</option>
@@ -63,7 +66,7 @@
 			</li>
 			<li>
 				<label for="area">Tema de interés</label>
-				<select id="area" name="data[area]">
+				<select id="area" name="area">
 					<option>SAP</option>
 					<option>Tablero de comando</option>
 					<option>Excel/Access</option>
@@ -73,18 +76,18 @@
 			</li>
 			<li>
 				<label for="subject">Motivo de contacto<span>*</span></label>
-				<input type="text" name="data[subject]" id="subject" />
+				<input type="text" name="subject" id="subject" required="required" />
 			</li>
 			<li>
 				<label for="message">Comentario<span>*</span></label>
-				<textarea name="data[message]" id="message" rows="6"></textarea>
+				<textarea name="message" id="message" rows="6" required="required"></textarea>
 			</li>
 		</ol>
-		<input id="submit" name="submit" type="submit" value="Enviar" />
+		<input id="submit" type="submit" value="Enviar" />
 	</fieldset>
 </form>
 <script type="text/javascript" src="../js/validation.js"></script>
 
 <div id="contact_card">
-	Si desea comunicarse directamente con nosotros puede hacerlo a nuestra dirección de correo <?php add_email('contacto','e-classnet')?> ó al (549) 11 6514-4040	
+	Si desea comunicarse directamente con nosotros puede hacerlo a nuestra dirección de correo <a href="mailto:contacto@e-classnet.com">contacto@e-classnet.com</a> ó al (549) 11 6514-4040	
 </div>
