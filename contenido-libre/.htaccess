@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule (.*\.(?:xls|pps|pdf))$ index.php?f=$1
