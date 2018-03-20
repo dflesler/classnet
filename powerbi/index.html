@@ -12,7 +12,13 @@
 	<meta name='google-site-verification' content='3icQKukuoaNoQcIlaMJv0uKzvJX-mpEQtDx0f-yvgw8' />
 	<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
 	<link href='/css/style.css' rel='stylesheet' type='text/css' />
-	<script type='text/javascript' src='/js/common.js'></script>
+	<style type='text/css'>
+	h1 {
+		margin: 135px 0 0 0;
+		width: 100%;
+		text-align: center;
+	}
+	</style>
 </head>
 <body>
 	<!-- LOGO -->
@@ -44,23 +50,16 @@
 	<!-- MAIN -->
 	<div id="contentWrap">
 		<div id="content" class="center">
-			<!-- SIDEBAR -->
-			<div id="sidebar">
-				<img src='/images/classnet_inicio.jpg' alt='Inicio' title='Inicio' width='240' height='360' />
-			</div>
 			<!-- CONTENT -->
-			<div id="text">
-				<h1>Inicio</h1>
-<p><strong>Classnet Technology</strong> es una empresa de <strong>Consultoría y Formación Informática</strong> que presta servicios a empresas grandes y medianas-grandes basados en el sistema <strong><a href="servicios/sistema-sap/">SAP</a></strong> y a Pymes que utilizan otros <strong>sistemas ERP</strong>.</p>
-
-<p>Otro área en la que asistimos a las empresas es el Desarrollo de Aplicaciones especiales <strong><a href="servicios/tablero-de-comando/">Tableros de Comando</a></strong> en <strong><a href="servicios/aplicaciones-ms-office/">Excel y Access</a></strong>.</p>
-
-<p>Basamos nuestra metodología de trabajo en nuestra <strong>formación y experiencia</strong>, pero con la visión puesta en que son nuestros clientes los que conocen su negocio y necesidades; son ellos el origen de las ideas y donde quieren llegar. Nuestro espacio consistirá en proveerlos de las <strong>mejores y más económicas soluciones</strong>.</p>
-
-<p class="important">
-<strong class="sub-title">Importante</strong>: Le informamos que la <strong>SEPYME subvenciona</strong> las actividades realizadas por empresas incluidas en su Directorio de Consultores de Capacitación hasta en un <strong>100%</strong> y las de Desarrollo de Software y Consultoría hasta un <strong>60%</strong>.
-</p>
-			</div>
+			<h1>Redirigiendo a PowerBI...</h1>
+			<a id="powerbi"></a>
+			<script type="text/javascript">
+			var qs = location.search.replace('?', '')
+			if (qs) {
+				var url = 'https://app.powerbi.com/view?' + qs
+				setTimeout(function() { location.href = url }, 3000)
+			}
+			</script>
 		</div>
 		<div id="content_gradient">&nbsp;</div>
 	</div>
